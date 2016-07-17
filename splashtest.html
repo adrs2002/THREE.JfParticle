@@ -291,6 +291,7 @@
                 igeo.addAttribute('addsize', addsize);
 
                 var mesh = new THREE.Mesh(igeo, nowMat);
+                mesh.frustumCulled = false;
                 scene.add(mesh);
             }
 
